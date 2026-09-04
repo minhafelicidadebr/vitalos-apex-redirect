@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0;url=https://www.vitalos.com.br/">
+    <link rel="canonical" href="https://www.vitalos.com.br/">
+    <title>VitalOS — redirecionando</title>
+    <script>
+      (() => {
+        const destination = new URL("https://www.vitalos.com.br/");
+        destination.pathname = window.location.pathname || "/";
+        destination.search = window.location.search;
+        destination.hash = window.location.hash;
+        window.location.replace(destination.href);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>
+      Redirecionando para
+      <a id="fallback" href="https://www.vitalos.com.br/">www.vitalos.com.br</a>.
+    </p>
+    <script>
+      const fallback = document.getElementById("fallback");
+      const destination = new URL("https://www.vitalos.com.br/");
+      destination.pathname = window.location.pathname || "/";
+      destination.search = window.location.search;
+      destination.hash = window.location.hash;
+      fallback.href = destination.href;
+    </script>
+  </body>
+</html>
