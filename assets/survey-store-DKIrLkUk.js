@@ -1,0 +1,1 @@
+import{G as e,W as t}from"./index-wh8GERCK.js";var n=e()(t((e,t)=>({respondedWaveIds:[],hasResponded:e=>t().respondedWaveIds.includes(e),markResponded:t=>e(e=>e.respondedWaveIds.includes(t)?e:{respondedWaveIds:[...e.respondedWaveIds,t]}),reset:t=>e(e=>({respondedWaveIds:e.respondedWaveIds.filter(e=>e!==t)}))}),{name:`vita-wave-responses`}));export{n as t};

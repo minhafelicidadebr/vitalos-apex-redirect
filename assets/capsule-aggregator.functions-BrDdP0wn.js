@@ -1,0 +1,1 @@
+import{n as e,t}from"./createServerFn-BAAd2Fgl.js";var n=t({method:`POST`}).handler(e(`ca707ab767d865221c613b51eb678dab2f8726ed58811cc1379126d3be4878e8`)),r=t({method:`POST`}).handler(e(`b8b7c4d693089e4c36a27f5aa4e464a8561742e0e95a340395f9e40f0fa84487`));export{n,r as t};

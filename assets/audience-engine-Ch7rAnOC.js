@@ -1,0 +1,1 @@
+function e(e,t,n){let r=e.filter(e=>e.roleIds.includes(t));return r.length===1?{policy:r[0],reason:`matched`,matchedRoleId:t}:{policy:n,reason:r.length===0?`missing_role`:`ambiguous_role`,matchedRoleId:t}}function t(e,t){return e.capabilities.includes(t)}export{e as n,t};

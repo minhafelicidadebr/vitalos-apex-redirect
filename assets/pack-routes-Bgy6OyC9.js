@@ -1,0 +1,1 @@
+import{H as e}from"./index-wh8GERCK.js";function t(t){return e(t).pack.overviewRoute??`/rh`}var n=new Set([`organization`,`team`,`self`]);function r(e){return(e.roles??[]).filter(e=>n.has(e.scope))}export{t as n,r as t};

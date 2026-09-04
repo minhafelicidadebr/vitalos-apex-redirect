@@ -1,0 +1,1 @@
+function e(e,t){let n=e.length,r=e.filter(e=>t[e.id]!=null).length,i=e.find(e=>t[e.id]==null);return{total:n,answered:r,pct:n>0?Math.round(r/n*100):0,isComplete:n>0&&r===n,firstUnansweredId:i?.id??null}}function t(e,t){return e.options.some(e=>e.value===t)}export{e as n,t};

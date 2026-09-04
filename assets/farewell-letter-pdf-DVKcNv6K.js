@@ -1,0 +1,3 @@
+import{i as e}from"./pdf-kit-DGLtgeQb.js";function t(t,n){let r=new e({kicker:`Carta pedagógica · Voz Segura`,title:t.title,subtitle:`Uma lembrança da sua jornada de liderança`,documentId:n.documentId,generatedAtLabel:n.generatedAtLabel});r.addGap(4),r.addParagraph(t.greeting,{size:11,bold:!0,gapAfter:5});for(let e of t.stanzas){for(let t of e.split(`
+`))r.addParagraph(t,{size:10.5,gapAfter:0});r.addGap(4)}for(let e of t.closingLine.split(`
+`))r.addParagraph(e,{size:10.5,gapAfter:0});return r.addGap(3),r.addParagraph(t.signature,{size:10,bold:!0,gapAfter:6}),r.addCallout(t.disclaimer,`muted`),r.finalize()}function n(e,n,r){t(e,n).save(r)}export{n as downloadFarewellLetterPdf};
